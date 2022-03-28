@@ -35,7 +35,7 @@ export function renderLogin(ctx) {
 
         authService.login(email, password)
             .then(() => {
-                ctx.page.redirect('/listing');
+                ctx.page.redirect('/');
             });
     }
 

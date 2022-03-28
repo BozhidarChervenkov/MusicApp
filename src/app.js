@@ -9,6 +9,9 @@ import { renderLogout } from './views/logoutView.js';
 import { renderRegister } from './views/registerView.js';
 import { renderHome } from './views/homeView.js';
 import { renderCatalog } from './views/catalogView.js';
+import { renderAlbumDetails } from './views/detailsView.js';
+import { renderEditAlbum } from './views/editView.js';
+import { renderCreateAlbum } from './views/createView.js';
 
 page(authMiddleware);
 page(navigationMiddleware);
@@ -19,6 +22,9 @@ page('/login', renderLogin);
 page('/logout', renderLogout);
 page('/register', renderRegister);
 page('/catalog', renderCatalog);
+page('/create-album', renderCreateAlbum);
+page('/details/:albumId', renderAlbumDetails);
+page('/edit/:albumId', renderEditAlbum);
 page('/search', () => console.log('search'));
 
 page.start();

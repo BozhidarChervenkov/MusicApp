@@ -8,7 +8,7 @@ const guestUserNavigation = () => html`
 
 const loggedUserNavigation = () => html`
     <!--Only user-->
-    <li><a href="/create">Create Album</a></li>
+    <li><a href="/create-album">Create Album</a></li>
     <li><a href="/logout">Logout</a></li>
 `;
 

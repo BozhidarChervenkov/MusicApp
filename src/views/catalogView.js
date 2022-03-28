@@ -13,7 +13,7 @@ const albumTemplate = (album) => html`
             <p class="date">Release Date: ${album.releaseDate}</p>
         </div>
         <div class="btn-group">
-            <a href="/details" id="details">Details</a>
+            <a href="/details/${album._id}" id="details">Details</a>
         </div>
     </div>
 </div>
