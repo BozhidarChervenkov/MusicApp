@@ -5,5 +5,5 @@ export const login = `${baseUrl}/users/login`;
 export const register = `${baseUrl}/users/register`;
 export const logout = `${baseUrl}/users/logout`;
 
-export const cars = `${baseUrl}/data/albums`;
+export const albums = `${baseUrl}/data/albums`;
 

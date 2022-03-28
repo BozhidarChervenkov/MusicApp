@@ -8,6 +8,7 @@ import { renderLogin } from './views/loginView.js';
 import { renderLogout } from './views/logoutView.js';
 import { renderRegister } from './views/registerView.js';
 import { renderHome } from './views/homeView.js';
+import { renderCatalog } from './views/catalogView.js';
 
 page(authMiddleware);
 page(navigationMiddleware);
@@ -17,7 +18,7 @@ page('/', renderHome);
 page('/login', renderLogin);
 page('/logout', renderLogout);
 page('/register', renderRegister);
-page('/catalog', () => console.log('catalog'));
+page('/catalog', renderCatalog);
 page('/search', () => console.log('search'));
 
 page.start();
