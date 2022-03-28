@@ -7,18 +7,17 @@ import page from '../node_modules/page/page.mjs';
 import { renderLogin } from './views/loginView.js';
 import { renderLogout } from './views/logoutView.js';
 import { renderRegister } from './views/registerView.js';
+import { renderHome } from './views/homeView.js';
 
 page(authMiddleware);
 page(navigationMiddleware);
 page(renderMiddleware);
 
-page('/', () => console.log('home'));
+page('/', renderHome);
 page('/login', renderLogin);
 page('/logout', renderLogout);
 page('/register', renderRegister);
 page('/catalog', () => console.log('catalog'));
 page('/search', () => console.log('search'));
-page('/logout', () => console.log('logout'));
-
 
 page.start();
