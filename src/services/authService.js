@@ -12,8 +12,8 @@ export const login = (email, password) => {
         })
 };
 
-export const register = (username, password) => {
-    return request.post(api.register, { username, password })
+export const register = (email, password) => {
+    return request.post(api.register, { email, password })
         .then(user => {
             saveUser(user);
 
