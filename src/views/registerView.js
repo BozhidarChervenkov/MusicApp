@@ -37,6 +37,11 @@ export function renderRegister(ctx) {
         let password = formData.get('password');
         let repeatPass = formData.get('conf-pass');
 
+        if (email == '' || password == '' || repeatPass == '') {
+            alert('All input fields must be filled!')
+            return;
+        }
+
         authService.register(email, password, repeatPass)
             .then(() => {
                 ctx.page.redirect('/');

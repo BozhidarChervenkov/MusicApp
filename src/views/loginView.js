@@ -39,6 +39,5 @@ export function renderLogin(ctx) {
             });
     }
 
-    console.log('test');
     ctx.render(loginTemplate(onSubmit));
 }
